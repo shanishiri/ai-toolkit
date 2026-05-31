@@ -1,0 +1,21 @@
+# Local env files (the .example template IS tracked — see negation below).
+.env
+.env.*
+!.env.local.example
+
+# macOS / editor cruft.
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Python bytecode (the bundled encoder script doesn't import anything user-
+# written, but be safe in case anyone runs it inline and Python caches).
+__pycache__/
+*.pyc
+*.pyo
+
+# Anything the runtime drops into the skill dir during local testing.
+/tmp/
+*.log
